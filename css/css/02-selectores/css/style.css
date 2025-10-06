@@ -1,0 +1,56 @@
+/*
+Selectores: Define estilos para diferentes elementos HTML
+*/
+
+
+
+/* Selector universal */
+* {
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+    /* Establece una fuente predeterminada para todos los elementos */
+}
+
+
+
+/* Selectores de etiqueta */
+
+/* Estilos para el encabezado h1 */
+h1 {
+    background-color: red; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 10px; /* Espaciado interno */
+}
+
+
+
+/* Estilos para enlaces <a> */
+a {
+    font-size: 18px; /* Tamaño de fuente */
+    color: green; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+
+
+/* Estilos para enlaces <a> dentro del footer */
+footer a {
+    color: red; /* Color rojo específico para enlaces en el footer */
+}
+
+
+
+/* Selectores por ID */
+
+/* Estilos para los elementos con id="descripcion" y id="title" */
+#descripcion, #title {
+    border: 5px solid black; /* Borde sólido negro */
+    padding: 15px; /* Espaciado interno */
+}
+
+
+
+/* Estilos específicos para el elemento con id="title" */
+#title {
+    background: blue; /* Fondo azul */
+    border: 2px dashed white; /* Borde blanco discontinuo */
+}
