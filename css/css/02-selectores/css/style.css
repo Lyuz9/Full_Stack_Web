@@ -2,15 +2,11 @@
 Selectores: Define estilos para diferentes elementos HTML
 */
 
-
-
 /* Selector universal */
 * {
     font-family: Verdana, Arial, Tahoma, sans-serif;
     /* Establece una fuente predeterminada para todos los elementos */
 }
-
-
 
 /* Selectores de etiqueta */
 
@@ -21,8 +17,6 @@ h1 {
     padding: 10px; /* Espaciado interno */
 }
 
-
-
 /* Estilos para enlaces <a> */
 a {
     font-size: 18px; /* Tamaño de fuente */
@@ -30,14 +24,10 @@ a {
     text-decoration: none; /* Elimina el subrayado */
 }
 
-
-
 /* Estilos para enlaces <a> dentro del footer */
 footer a {
     color: red; /* Color rojo específico para enlaces en el footer */
 }
-
-
 
 /* Selectores por ID */
 
@@ -47,10 +37,47 @@ footer a {
     padding: 15px; /* Espaciado interno */
 }
 
-
-
 /* Estilos específicos para el elemento con id="title" */
 #title {
     background: blue; /* Fondo azul */
     border: 2px dashed white; /* Borde blanco discontinuo */
+}
+
+
+
+
+/* Selector de clase: Estilos basados en clases CSS para elementos específicos */
+
+/* Estilos para elementos con clase "parrafo2" */
+.parrafo2 {
+    font-style: italic; /* Texto en cursiva */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos compartidos para elementos con clases "parrafo1" y "parrafo3" */
+.parrafo1, .parrafo3 {
+    background-color: green; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos específicos para elementos con clase "parrafo3" (sobrescribe el fondo) */
+.parrafo3 {
+    background-color: yellow; /* Fondo amarillo (prioridad por especificidad) */
+    color: black; /* Texto negro */
+}
+
+/* Selectores de atributos y descendientes: Estilos para elementos dentro de un contenedor con id="usuario" */
+
+/* Estilos para el formulario dentro del elemento con id="usuario" */
+#usuario form {
+    border: 5px solid blue; /* Borde sólido azul */
+    margin-top: 15px; /* Margen superior */
+    margin-bottom: 15px; /* Margen inferior */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para todos los elementos hijos dentro del formulario en #usuario */
+#usuario form * {
+    display: block; /* Fuerza display en bloque para todos los hijos (útil para formularios) */
 }
