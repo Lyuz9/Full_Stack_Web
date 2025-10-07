@@ -81,3 +81,37 @@ footer a {
 #usuario form * {
     display: block; /* Fuerza display en bloque para todos los hijos (útil para formularios) */
 }
+
+
+
+
+/* con esto ^ le digo .. los que al principio tengan www */
+a[href^="www"] {
+    color: rgb(157, 165, 42);
+}
+
+/* con esto $ le digo .. los que al final tengan com */
+a[href$="com"] {
+    color: rgb(0, 238, 255);
+}
+
+/* con esto * le digo .. cualquier elemento que tenga Gabo */
+a[href="Gabo"] {
+    color: blue;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"] {
+    background: green;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
