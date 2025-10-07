@@ -85,33 +85,37 @@ footer a {
 
 
 
-/* con esto ^ le digo .. los que al principio tengan www */
+/* Selectores de atributos: Estilos para elementos según valores de sus atributos */
+
+/* Estilos para enlaces <a> cuyo atributo href comienza con "www" */
 a[href^="www"] {
-    color: rgb(157, 165, 42);
+    color: rgb(157, 165, 42); /* Color verde oliva para el texto */
 }
 
-/* con esto $ le digo .. los que al final tengan com */
+/* Estilos para enlaces <a> cuyo atributo href termina con "com" */
 a[href$="com"] {
-    color: rgb(0, 238, 255);
+    color: rgb(0, 238, 255); /* Color cian para el texto */
 }
 
-/* con esto * le digo .. cualquier elemento que tenga Gabo */
+/* Estilos para enlaces <a> cuyo atributo href contiene exactamente "Gabo" */
 a[href="Gabo"] {
-    color: blue;
+    color: blue; /* Color azul para el texto */
 }
 
+/* Estilos para inputs de tipo texto */
 input[type="text"] {
-    margin-bottom: 15px;
-    padding: 10px;
-    width: 300px;
+    margin-bottom: 15px; /* Margen inferior para separación */
+    padding: 10px; /* Espaciado interno */
+    width: 300px; /* Ancho fijo del campo */
 }
 
+/* Estilos para inputs de tipo submit (botones de envío) */
 input[type="submit"] {
-    background: green;
-    color: white;
-    padding: 15px;
-    font-size: 15px;
-    text-transform: uppercase;
-    border: 1px solid black;
-    cursor: pointer;
+    background: green; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 15px; /* Espaciado interno */
+    font-size: 15px; /* Tamaño de fuente */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border: 1px solid black; /* Borde negro sólido */
+    cursor: pointer; /* Cursor tipo puntero al pasar por encima */
 }
