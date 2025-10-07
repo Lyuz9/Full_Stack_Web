@@ -87,6 +87,8 @@ footer a {
 
 /* Selectores de atributos: Estilos para elementos según valores de sus atributos */
 
+
+
 /* Estilos para enlaces <a> cuyo atributo href comienza con "www" */
 a[href^="www"] {
     color: rgb(157, 165, 42); /* Color verde oliva para el texto */
