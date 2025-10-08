@@ -121,3 +121,23 @@ input[type="submit"] {
     border: 1px solid black; /* Borde negro sólido */
     cursor: pointer; /* Cursor tipo puntero al pasar por encima */
 }
+
+
+/* Selectores de hijo: Estilos para elementos hijos directos */
+
+/* Estilos para enlaces <a> que son hijos directos de <li>, dentro del elemento con id="menu" */
+#menu > li > a {
+    font-size: 18px; /* Tamaño de fuente */
+    color: red; /* Color rojo para el texto */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilos para <h1> que es hijo directo del elemento con id="saludo" */
+#saludo h1 {
+    background: brown; /* Fondo marrón */
+}
+
+/* Estilos para todos los <h1> (puede ser sobrescrito por selectores más específicos, salvo por !important) */
+h1 {
+    background: purple !important; /* Fondo morado con prioridad alta */
+}
