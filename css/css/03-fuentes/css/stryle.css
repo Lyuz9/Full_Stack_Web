@@ -1,0 +1,33 @@
+/* Importar fuentes: Define fuentes personalizadas desde archivos externos */
+
+/* Define la fuente personalizada BBHSansBartle */
+@font-face {
+    font-family: BBHSansBartle; /* Nombre asignado a la fuente */
+    src: url(../font/BBHSansBartle/BBHSansBartle-Regular.ttf); /* Ruta al archivo de la fuente */
+}
+
+/* Define la fuente personalizada Montserrat */
+@font-face {
+    font-family: Montserrat; /* Nombre asignado a la fuente */
+    src: url(../font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf); /* Ruta al archivo de la fuente */
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+    font-family: BBHSansBartle; /* Aplica la fuente personalizada BBHSansBartle */
+}
+
+/* Estilos para el subtítulo h3 */
+h3 {
+    font-family: Montserrat, "Comic Sans MS"; /* Aplica Montserrat, con Comic Sans MS como respaldo */
+    font-size: 30px; /* Tamaño de fuente */
+    font-weight: lighter; /* Peso de fuente más ligero */
+    color: olive; /* Color verde oliva para el texto */
+}
+
+/* Estilos para párrafos p */
+p {
+    font-family: Montserrat; /* Aplica la fuente personalizada Montserrat */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+}
