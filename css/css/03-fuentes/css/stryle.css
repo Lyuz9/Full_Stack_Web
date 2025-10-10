@@ -15,6 +15,25 @@
 /* Estilos para el encabezado h1 */
 h1 {
     font-family: BBHSansBartle; /* Aplica la fuente personalizada BBHSansBartle */
+
+
+
+    /* Colores */
+
+
+
+    /* colores del sistema */
+    color: mediumpurple;
+    /* color: transparent; */
+    
+    /* colores exadecimales */
+    color: #000000;
+    color: #cccccc;
+    color: #eeeeee;
+
+    /* colores rgd */
+    color: rgba(red, green, blue, alpha);
+    color: rgb(223, 10, 10);
 }
 
 /* Estilos para el subtítulo h3 */
