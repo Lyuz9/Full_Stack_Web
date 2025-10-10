@@ -23,17 +23,21 @@ h1 {
 
 
     /* colores del sistema */
-    color: mediumpurple;
-    /* color: transparent; */
-    
-    /* colores exadecimales */
-    color: #000000;
-    color: #cccccc;
-    color: #eeeeee;
+    color: mediumpurple; /* Define el color del texto como morado medio usando un nombre predefinido */
+    /* color: transparent; */ /* Si se descomenta, hace el texto transparente (invisible) */
 
-    /* colores rgd */
-    color: rgba(red, green, blue, alpha);
-    color: rgb(223, 10, 10);
+    /* colores exadecimales */
+    color: #000000; /* Define el color como negro puro (#000000 = 0 rojo, 0 verde, 0 azul) */
+
+    color: #cccccc; /* Define el color como gris claro (#cccccc = 204 rojo, 204 verde, 204 azul) */
+
+    color: #eeeeee; /* Define el color como gris muy claro, casi blanco (#eeeeee = 238 rojo, 238 verde, 238 azul) */
+
+    /* Colores RGB y RGBA: Usa valores numéricos para rojo, verde, azul y opacidad */
+
+    color: rgba(red, green, blue, alpha); /* Plantilla para definir color con rojo, verde, azul (0-255) y opacidad (0-1) */
+
+    color: rgb(223, 10, 10); /* Define el color como rojo intenso (223 rojo, 10 verde, 10 azul, sin opacidad) */
 }
 
 /* Estilos para el subtítulo h3 */
