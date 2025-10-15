@@ -1,0 +1,8 @@
+/*  Para el background  */
+
+.container{
+    width: 70%;
+    height: 300px;
+    margin: 30px auto;
+    background: rgb(100, 100, 250);
+}
