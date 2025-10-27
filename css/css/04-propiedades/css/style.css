@@ -1,8 +1,37 @@
-/*  Para el background  */
-
-.container{
+/* 🎨 Para el background */
+.container {
     width: 70%;
+    /* Ancho del contenedor relativo al ancho del viewport */
     height: 300px;
+    /* Altura fija de 300 píxeles */
     margin: 30px auto;
-    background: rgb(100, 100, 250);
+    /* Centra el contenedor horizontalmente y añade margen superior/inferior */
+
+    /* Colores de fondo */
+    /* background: rgb(100, 100, 250); */
+    /* Forma abreviada (comentada) */
+    background-color: rgb(100, 100, 250);
+    /* Color de fondo azul claro */
+
+    /* Imagen de fondo */
+    /* background-image: url(../img/spiderman.jpg); */
+    /* Forma comentada */
+    background-image: url(../img/nube.jpg);
+    /* Carga una imagen llamada “nube.jpg” */
+
+    background-size: 50px;
+    /* Escala la imagen a 50x50 píxeles */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: top 10px right 50px;
+    /* Ubica la imagen a 10px del borde superior y 50px del derecho */
+
+    /* background-position: center; */
+    /* Opción alternativa centrada (comentada) */
+
+    background-size: 60px 60px;
+    /* Cambia tamaño a 60x60 píxeles */
+
+    /* background-size: cover; */
+    /* (Comentado) — Escala la imagen para cubrir todo el contenedor */
 }
