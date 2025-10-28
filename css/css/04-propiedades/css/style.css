@@ -16,22 +16,35 @@
     /* Imagen de fondo */
     /* background-image: url(../img/spiderman.jpg); */
     /* Forma comentada */
-    background-image: url(../img/nube.jpg);
+    background-image: url(../img/spiderman.jpg);
     /* Carga una imagen llamada “nube.jpg” */
 
-    background-size: 50px;
+    /* background-size: 50px; */
     /* Escala la imagen a 50x50 píxeles */
     background-repeat: no-repeat;
     /* Evita que la imagen se repita */
     background-position: top 10px right 50px;
+    background-position: center;
     /* Ubica la imagen a 10px del borde superior y 50px del derecho */
 
-    /* background-position: center; */
     /* Opción alternativa centrada (comentada) */
 
-    background-size: 60px 60px;
+    background-size: 80% 80%;
     /* Cambia tamaño a 60x60 píxeles */
 
     /* background-size: cover; */
     /* (Comentado) — Escala la imagen para cubrir todo el contenedor */
+}
+
+.atachment{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/panda.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fixed{
+    background-attachment: fixed;
 }
