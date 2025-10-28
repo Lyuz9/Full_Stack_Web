@@ -1,35 +1,86 @@
 /* 🎨 Fondo aplicado al contenedor principal */
 .container {
-    width: 70%;                 /* Ancho relativo al viewport */
+    width: 70%;                 /* Ancho relativo al viewport (ventana del navegador) */
     height: 300px;              /* Altura fija de 300 píxeles */
-    margin: 30px auto;          /* Centrado horizontal con margen superior/inferior */
+    margin: 30px auto;          /* Centrado horizontal con margen superior e inferior */
 
     /* 🎨 Color base del fondo */
     background-color: rgb(100, 100, 250);  /* Azul claro */
 
     /* 🖼️ Imagen de fondo (Spiderman) */
-    background-image: url(../img/spiderman.jpg);
-    /* Reemplaza la imagen anterior “nube.jpg” */
+    background-image: url(../img/spiderman.jpg); /* Ruta de la imagen de fondo */
 
-    background-repeat: no-repeat;          /* No se repite la imagen */
-    background-position: top 10px right 50px; /* Posiciona imagen a 10px del top y 50px del borde derecho */
+    /* ⚙️ Configuración del fondo */
+    background-repeat: no-repeat;          /* Evita que la imagen se repita */
+    background-position: top 10px right 50px; /* Posiciona la imagen a 10px desde el borde superior y 50px del derecho */
     background-position: center;           /* Centra la imagen en el contenedor */
     background-size: 80% 80%;              /* Escala la imagen al 80% del ancho y alto del contenedor */
 
     /* background-size: cover; */           /* Opción alternativa para cubrir todo el contenedor (comentada) */
 }
 
-/* 🧭 Fondo para la cabecera */
+/* 🧭 Fondo para la cabecera principal */
 .atachment {
-    width: 100%;                  /* Ocupa todo el ancho de la ventana */
+    width: 100%;                  /* Ocupa el 100% del ancho de la ventana */
     height: 100vh;                /* Altura igual al 100% del viewport (pantalla visible) */
-    background-image: url(../img/panda.jpeg); /* Imagen de fondo para el header */
-    background-repeat: no-repeat;  /* Evita la repetición */
-    background-position: center;   /* Centra la imagen en el eje X e Y */
-    background-size: cover;        /* La imagen cubre todo el header */
+    background-image: url(../img/panda.jpeg); /* Imagen de fondo aplicada a la cabecera */
+    background-repeat: no-repeat;  /* Evita la repetición de la imagen */
+    background-position: center;   /* Centra la imagen en ambos ejes */
+    background-size: cover;        /* Ajusta la imagen para cubrir todo el área del header */
 }
 
 /* 🧷 Efecto de desplazamiento fijo */
 .fixed {
-    background-attachment: fixed;  /* Hace que la imagen se quede fija al hacer scroll */
+    background-attachment: fixed;  /* Mantiene la imagen de fondo fija al hacer scroll */
+}
+
+/* 🌈 Fondo con degradado lineal */
+.degradado {
+    width: 80%;                   /* Ancho del contenedor al 80% del viewport */
+    height: 400px;                /* Altura fija de 400 píxeles */
+    margin: 30px auto;            /* Centrado con margen superior e inferior */
+    background-color: steelblue;  /* Color base del fondo */
+
+    /* Ejemplo general de gradiente lineal */
+    /* background-image: linear-gradient(dirección, color stop, color stop); */
+
+    /* 🌇 Ejemplo básico vertical (de arriba a abajo) */
+    background-image: linear-gradient(to bottom, red, pink);
+
+    /* 🌄 Versión personalizada con puntos de color específicos */
+    background-image: linear-gradient(crimson 30%, steelblue 80%);
+
+    /*
+        🧭 Opciones de dirección para gradientes lineales:
+
+        Por defecto → background-image: linear-gradient(red, pink);
+        Derecha     → background-image: linear-gradient(to right, red, pink);
+        Izquierda   → background-image: linear-gradient(to left, red, pink);
+        Arriba      → background-image: linear-gradient(to top, red, pink);
+        Abajo       → background-image: linear-gradient(to bottom, red, pink);
+
+        🌀 También se puede especificar el porcentaje de cada color:
+        Ejemplo → background-image: linear-gradient(crimson 30%, steelblue 80%);
+    */
+}
+
+/* 🧠 Cabecera con gradiente y fondo combinado */
+.header {
+    padding: 0.1px; /* Pequeño relleno para asegurar que el elemento tenga altura visible */
+    height: 650px;  /* Altura total del header */
+
+    /* 🎨 Fondo combinado: gradiente + imagen */
+    background-image: linear-gradient(#00008b7e, #4683b481), url(../img/panda.jpeg);
+
+    background-position: center;  /* Centra el fondo */
+    background-size: cover;       /* Cubre toda el área del header */
+    background-repeat: no-repeat; /* Evita la repetición */
+
+    /* 💡 Versión ajustada con transparencia y dirección descendente */
+    background-image: linear-gradient(
+        to bottom,
+        hsla(0, 99%, 47%, 0.664),      /* Rojo translúcido */
+        hsla(234, 90%, 41%, 0.685)     /* Azul translúcido */
+    ),
+    url(../img/panda.jpeg);            /* Imagen combinada con gradiente */
 }
