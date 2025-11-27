@@ -84,3 +84,37 @@
     ),
     url(../img/panda.jpeg);            /* Imagen combinada con gradiente */
 }
+
+/* 📦 Box model: dimensiones base para cualquier .box */
+.box {
+    width: 300px;   /* Ancho fijo del elemento */
+    height: 150px;  /* Altura fija del elemento */
+}
+
+.box1 {
+    background-color: steelblue;   /* Color de fondo (azul acero) */
+    border: 1px solid black;       /* Borde negro de 1px */
+
+    /*
+        🧭 Ejemplos educativos de cómo funciona margin:
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-right: 25px;
+        margin-left: 30px;
+
+        shorthand → margin: top right bottom left;
+        margin: 50px 30px 25px 30px;
+
+        shorthand → margin: vertical horizontal;
+        margin: 40px 80px;
+
+        shorthand → margin: top horizontal bottom;
+        margin: 40px 0 80px 0;
+
+        alternativa de 3 valores:
+        margin: 40px 50px 80px;
+    */
+
+    margin: 0 auto; /* Centra horizontalmente el elemento 
+                       (izquierda y derecha automáticas) */
+}
